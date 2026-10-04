@@ -509,7 +509,7 @@ If you use this code or build on this work, please cite:
   title  = {Hybrid EfficientAD + DDPM Framework for Wafer Bin Map Defect Detection},
   author = {<Limon Bin Hossain>},
   year   = {2026},
-  howpublished = {\url{https://github.com/<limonbuet96>/<your-repo>}}
+  howpublished = {\url{https://github.com/<limonbuet96>/<Hybrid-Framework-for-Wafer-Bin-Defect-Detection>}}
 }
 ```
 
