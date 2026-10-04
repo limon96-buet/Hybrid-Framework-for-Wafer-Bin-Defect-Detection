@@ -260,95 +260,95 @@ All figures are saved at **600 DPI** in the [`output/`](output/) folder.
 
 **Figure 1 — 38-class defect distribution.** Sample count for every class in WM-38K; the dashed line marks the mean count.
 
-![38-class defect distribution](output/1.png)
+![38-class defect distribution](outputs/1.png)
 
 **Figure 2 — Defect mixing degree.** Share of wafers carrying 0 (normal), 1, 2, 3 or 4 simultaneous defect patterns.
 
-![Defect mixing degree](output/2.png)
+![Defect mixing degree](outputs/2.png)
 
 **Figure 3 — Global spatial defect density.** Per-pixel probability of a broken die across all 38,015 wafers, masked to the circular die area.
 
-![Global spatial defect density](output/3.png)
+![Global spatial defect density](outputs/3.png)
 
 **Figure 4 — Representative wafer maps.** One example each of Normal, Scratch, Donut, Edge-Loc, Edge-Ring and Loc (grey = blank, blue = normal die, red = broken die).
 
-![Representative wafer maps](output/4.png)
+![Representative wafer maps](outputs/4.png)
 
 **Figure 5 — Normal vs. defective sample counts.** The binary label the anomaly-detection task is built on — normal wafers are only 2.6% of the dataset.
 
-![Normal vs defective](output/5.png)
+![Normal vs defective](outputs/5.png)
 
 ### 2. EfficientAD — Training
 
 **Figure 6 — Total loss** (raw trace and smoothed overlay).
 
-![EfficientAD total loss](output/6.png)
+![EfficientAD total loss](outputs/6.png)
 
 **Figure 7 — Hard-mined student loss.**
 
-![EfficientAD student loss](output/7.png)
+![EfficientAD student loss](outputs/7.png)
 
 **Figure 8 — Autoencoder feature loss.**
 
-![EfficientAD AE loss](output/8.png)
+![EfficientAD AE loss](outputs/8.png)
 
 ### 3. EfficientAD — Test Results
 
 **Figure 9 — ROC curve** (AUROC = 0.9799).
 
-![EfficientAD ROC](output/9.png)
+![EfficientAD ROC](outputs/9.png)
 
 **Figure 10 — Score distribution** by ground-truth label, with the validation-selected threshold τ.
 
-![EfficientAD score distribution](output/10.png)
+![EfficientAD score distribution](outputs/10.png)
 
 **Figure 11 — Precision–recall curve** (AP = 0.9998).
 
-![EfficientAD PR curve](output/11.png)
+![EfficientAD PR curve](outputs/11.png)
 
 **Figure 12 — Qualitative anomaly maps.** Five test wafers with the EfficientAD anomaly map overlaid; titles show ground truth vs. prediction (✓ correct, ✗ wrong).
 
-![EfficientAD anomaly maps](output/12.png)
+![EfficientAD anomaly maps](outputs/12.png)
 
 ### 4. DDPM — Training and Test Results
 
 **Figure 13 — DDPM training loss** (ε-prediction MSE over 30 epochs).
 
-![DDPM training loss](output/13.png)
+![DDPM training loss](outputs/13.png)
 
 **Figure 14 — ROC curve** (AUROC = 0.9931).
 
-![DDPM ROC](output/14.png)
+![DDPM ROC](outputs/14.png)
 
 **Figure 15 — Score distribution** by ground-truth label.
 
-![DDPM score distribution](output/15.png)
+![DDPM score distribution](outputs/15.png)
 
 **Figure 16 — Original test wafers** used for the reconstruction example below.
 
-![DDPM original wafers](output/16.png)
+![DDPM original wafers](outputs/16.png)
 
 **Figure 17 — Reconstruction-error maps** for the same wafers as Figure 16, with prediction and normalised score.
 
-![DDPM reconstruction error maps](output/17.png)
+![DDPM reconstruction error maps](outputs/17.png)
 
 **Figure 18 — Synthetic normal wafers** generated from pure noise with 50-step DDIM sampling, showing what the model has learned "normal" to look like.
 
-![DDPM generated samples](output/18.png)
+![DDPM generated samples](outputs/18.png)
 
 ### 5. Hybrid Fusion — Comparison
 
 **Figure 19 — Three-way ROC comparison** of EfficientAD, DDPM and Fusion.
 
-![Three-way ROC](output/19.png)
+![Three-way ROC](outputs/19.png)
 
 **Figure 20 — Three-way precision–recall comparison.**
 
-![Three-way PR](output/20.png)
+![Three-way PR](outputs/20.png)
 
 **Figure 21 — Reliability (calibration) diagram.** Mean predicted score vs. observed fraction of defectives per bin.
 
-![Reliability diagram](output/21.png)
+![Reliability diagram](outputs/21.png)
 
 ### 6. Spatial Anomaly Map Decomposition
 
@@ -356,29 +356,29 @@ Each figure shows the original wafer, the EfficientAD map, the DDPM map and the 
 
 **Figure 22 — True Positive** (correctly detected defect).
 
-![Spatial map TP](output/22.png)
+![Spatial map TP](outputs/22.png)
 
 **Figure 23 — True Negative** (correctly accepted normal wafer).
 
-![Spatial map TN](output/23.png)
+![Spatial map TN](outputs/23.png)
 
 **Figure 24 — False Positive** (false alarm on a normal wafer).
 
-![Spatial map FP](output/24.png)
+![Spatial map FP](outputs/24.png)
 
 **Figure 25 — False Negative** (missed defect).
 
-![Spatial map FN](output/25.png)
+![Spatial map FN](outputs/25.png)
 
 ### 7. Results Table and Ablation
 
 **Figure 26 — Publication-quality results table** with 95% bootstrap confidence intervals.
 
-![Results table](output/26.png)
+![Results table](outputs/26.png)
 
 **Figure 27 — Fusion weight (α) sensitivity.** AUROC, AP and F1 as a function of α; the default α = 0.5 coincides with the best AUROC.
 
-![Alpha sensitivity](output/27.png)
+![Alpha sensitivity](outputs/27.png)
 
 ---
 
@@ -507,9 +507,9 @@ If you use this code or build on this work, please cite:
 ```bibtex
 @misc{hybrid_efficientad_ddpm_wbm,
   title  = {Hybrid EfficientAD + DDPM Framework for Wafer Bin Map Defect Detection},
-  author = {<Your Name>},
+  author = {<Limon Bin Hossain>},
   year   = {2026},
-  howpublished = {\url{https://github.com/<your-username>/<your-repo>}}
+  howpublished = {\url{https://github.com/<limonbuet96>/<your-repo>}}
 }
 ```
 
